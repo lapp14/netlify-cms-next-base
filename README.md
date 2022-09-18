@@ -1,0 +1,2 @@
+# Netlify CMS NextJS Base
+
