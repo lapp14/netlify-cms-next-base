@@ -11,6 +11,8 @@ Base headless CMS site using Git, Netlify CMS and NextJS
 - Use the following build settings
   - Build command: `npm run export`
   - Publish directory: `out`
+- Go to `Build & Deploy > Environment` and add env variable `NETLIFY_NEXT_PLUGIN_SKIP = true` ([more info...](https://stackoverflow.com/questions/72724257/i-cannot-deploy-next-js-to-netlify-deploy-failed-because-of-a-mistake-in-netli))
+- Check the branch name in CMS `config.yml` to make sure it matches repo
 
 ### Enable Identity and Git Gateway
 From your site dashboard on Netlify:
