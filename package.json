@@ -11,7 +11,7 @@
         "export": "npm run build && next export"
     },
     "engines": {
-        "node": ">=16.17.0 <17]"
+        "node": ">=16.17.0 <17"
     },
     "keywords": [],
     "author": "",
