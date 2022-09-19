@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
+import '../styles/reset.css'
 import '../styles/global.scss'
+import '../styles/header.scss'
 
 export default function App({ Component, pageProps }) {
   return (
