@@ -4,6 +4,7 @@ Base headless CMS site using Git, Netlify CMS and NextJS
 
 [Live Demo](https://netlify-cms-next-base.netlify.app/)
 
+
 ## Setup
 
 - Create new repo on GitHub
@@ -22,3 +23,8 @@ From your site dashboard on Netlify:
 1. Scroll down to Services > Git Gateway, and click Enable Git Gateway. This authenticates with your Git host and generates an API access token. In this case, we're leaving the Roles field blank, which means any logged in user may access the CMS. For information on changing this, check the Netlify Identity documentation.
 1. Go to `/admin` and sign up. Check spam folder for email, and confirm
 1. Once able to log in, under Registration preferences, select Invite only.
+
+## Links
+
+https://www.netlifycms.org/docs/nextjs/
+https://www.smashingmagazine.com/2021/06/creating-multi-author-blog-nextjs/
