@@ -25,6 +25,20 @@ h4 {
     line-height: $font-lineheight-m;
 }
 
-main {
+.container {
     padding: $spacing-m;
+    background: $color-background;
+}
+
+@media (min-width: $breakpoint-mobile) {
+}
+
+@media (min-width: $breakpoint-tablet) {
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .container {
+        margin: 0 auto;
+        max-width: $content-max-width;
+    }
 }

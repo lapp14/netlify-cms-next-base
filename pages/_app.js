@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
     <>
       <header>
         <nav>
-          <div class="brand">
+          <div className="brand">
             <a href="/">Brand</a>
           </div>
 
@@ -36,7 +36,9 @@ export default function App({ Component, pageProps }) {
       </header>
 
       <main>
-        <Component {...pageProps} />
+        <div className="container">
+          <Component {...pageProps} />
+        </div>
       </main>
     </>
   )

@@ -1,5 +1,10 @@
 $header-padding: 1rem;
 
+/* breakpoints */
+$breakpoint-mobile: 640px;
+$breakpoint-tablet: 900px;
+$breakpoint-desktop: 1380px;
+
 /* headers only */
 $font-size-xxl: 2.7rem;
 $font-lineheight-xxl: 3.2rem;
@@ -12,21 +17,18 @@ $font-lineheight-l: 1.9rem;
 
 $font-size-m: 1.35rem;
 $font-lineheight-m: 1.6rem;
-/*****/
 
+/* spacing */
+$content-max-width: 900px;
 $spacing-m: 1rem;
 
-h2 {
-    font-size: $font-size-xl;
-    line-height: $font-lineheight-xl;
-}
+/* colors */
+$color-white: #fff;
+$color-grey-light: #dedede;
+$color-grey-med: #ccc;
+$color-black: #000;
 
-h3 {
-    font-size: $font-size-l;
-    line-height: $font-lineheight-l;
-}
-
-h4 {
-    font-size: $font-size-m;
-    line-height: $font-lineheight-m;
-}
+/* color assignments */
+$color-header: $color-grey-light;
+$color-background: $color-white;
+$color-font: $color-black;

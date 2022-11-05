@@ -2,12 +2,12 @@
 title: Homepage List Title
 date: 2022-11-04
 list:
-  - description: 'Title 1'
-    name: asd
-  - description: Title 2.
-    name: asdf
-  - description: 'Title 3'
-    name: asdfg
+  - description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium'
+    name: Title 1
+  - description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    name: Title 2
+  - description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+    name: Title 3
 ---
 Welcome to my website.
 
