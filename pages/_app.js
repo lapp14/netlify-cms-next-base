@@ -9,13 +9,11 @@ export default function App({ Component, pageProps }) {
     <>
       <header>
         <nav>
-          <ul>
-            <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
+          <div class="brand">
+            <a href="/">Brand</a>
+          </div>
 
+          <ul>
             <li>
               <Link href="/posts">
                 <a>Posts</a>
@@ -23,8 +21,14 @@ export default function App({ Component, pageProps }) {
             </li>
 
             <li>
-              <Link href="/authors">
-                <a>Authors</a>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
+            </li>
+
+            <li>
+              <Link href="/contact">
+                <a>Contact</a>
               </Link>
             </li>
           </ul>

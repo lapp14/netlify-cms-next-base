@@ -4,6 +4,9 @@ Base headless CMS site using Git, Netlify CMS and NextJS
 
 [Live Demo](https://netlify-cms-next-base.netlify.app/)
 
+## Development
+
+Run `npm run dev` to start development server
 
 ## Setup
 
@@ -28,3 +31,5 @@ From your site dashboard on Netlify:
 
 https://www.netlifycms.org/docs/nextjs/
 https://www.smashingmagazine.com/2021/06/creating-multi-author-blog-nextjs/
+
+Font sizes in design: https://www.editorx.com/shaping-design/article/font-size

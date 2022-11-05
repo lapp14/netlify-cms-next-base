@@ -1,0 +1,32 @@
+$header-padding: 1rem;
+
+/* headers only */
+$font-size-xxl: 2.7rem;
+$font-lineheight-xxl: 3.2rem;
+
+$font-size-xl: 2.1rem;
+$font-lineheight-xl: 2.5rem;
+
+$font-size-l: 1.6rem;
+$font-lineheight-l: 1.9rem;
+
+$font-size-m: 1.35rem;
+$font-lineheight-m: 1.6rem;
+/*****/
+
+$spacing-m: 1rem;
+
+h2 {
+    font-size: $font-size-xl;
+    line-height: $font-lineheight-xl;
+}
+
+h3 {
+    font-size: $font-size-l;
+    line-height: $font-lineheight-l;
+}
+
+h4 {
+    font-size: $font-size-m;
+    line-height: $font-lineheight-m;
+}

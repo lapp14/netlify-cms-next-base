@@ -4,20 +4,26 @@ import { attributes, react as HomeContent } from '../content/home.md';
 
 export default class Home extends Component {
   render() {
-    let { title, cats } = attributes;
+    let { title, list } = attributes;
     return (
       <>
         <Head>
+          <title>Homepage</title>
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Head>
         <article>
           <h1>{title}</h1>
+
+          {/* content portion of 'content/home.md' */}
           <HomeContent />
+          <br />
+
+          {/* editable list portion of 'content/home.md' */}
           <ul>
-            {cats.map((cat, k) => (
+            {list.map((item, k) => (
               <li key={k}>
-                <h2>{cat.name}</h2>
-                <p>{cat.description}</p>
+                <h2>{item.name}</h2>
+                <p>{item.description}</p>
               </li>
             ))}
           </ul>

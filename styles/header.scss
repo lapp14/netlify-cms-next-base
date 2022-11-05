@@ -1,5 +1,33 @@
+@import "_variables.scss";
+
 header {
     margin: 0;
+    padding: $header-padding;
     background: #dedede;
     border-bottom: 1px solid #ccc;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+}
+
+header > nav > .brand {
+    text-decoration: none;
+    color: #000;
+    font-size: $font-lineheight-l;
+}
+
+header > nav > .brand > a {
+    text-decoration: none;
+    color: #000;
+}
+
+header > nav > ul {
+    display: flex;
+    margin-left: auto;
+}
+
+header > nav > ul > li {
+    margin-left: $spacing-m;
 }

@@ -1,3 +1,4 @@
+import Head from "next/head"
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 
 export default function Post({ post }) {
@@ -8,11 +9,16 @@ export default function Post({ post }) {
   })
 
   return (
-    <div className="post">
-      <h1>{post.title}</h1>
-      <time dateTime={post.createdAt}>{prettyDate}</time>
-      <div dangerouslySetInnerHTML={{ __html: post.body }} />
-    </div>
+    <>
+      <Head>
+        <title>Blog Post - {post.title}</title>
+      </Head>
+      <div className="post">
+        <h1>{post.title}</h1>
+        <time dateTime={post.createdAt}>{prettyDate}</time>
+        <div dangerouslySetInnerHTML={{ __html: post.body }} />
+      </div>
+    </>
   )
 }
 

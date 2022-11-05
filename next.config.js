@@ -1,9 +1,5 @@
 const path = require('path')
 module.exports = {
-  future: {
-    webpack5: true, // by default, if you customize webpack config, they switch back to version 4. 
-    // Looks like backward compatibility approach.
-  },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
