@@ -2,14 +2,16 @@
 
 header {
     margin: 0;
-    padding: $header-padding;
+    height: $header-height;
     background: $color-header;
     border-bottom: 1px solid $color-grey-med;
 }
 
 header > nav {
     display: flex;
+    height: 100%;
     align-items: center;
+    margin: 0 $spacing-m;
 }
 
 header > nav > .brand {
@@ -23,11 +25,89 @@ header > nav > .brand > a {
     color: $color-font;
 }
 
-header > nav > ul {
-    display: flex;
+.collapsable-menu {
     margin-left: auto;
 }
 
-header > nav > ul > li {
-    margin-left: $spacing-m;
+.menu-toggle {
+    cursor: pointer;
+    padding: $spacing-s;
+    position: relative;
+    user-select: none;
+}
+
+.collapsable-menu .menu-content {
+    display: none;
+}
+
+.collapsable-menu input:checked ~ .menu-content {
+    display: flex !important;
+    transition: max-height 0.2s ease-in-out;
+    max-height: 800px;
+}
+
+input#menu {
+    display: none;
+}
+
+.menu-content {
+    position: absolute;
+    right: 0;
+    top: $header-height;
+    background: $color-mobile-menu-background;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.menu-content li a {
+    display: flex;
+    justify-content: right;
+    padding: $mobile-menu-link-padding;
+    text-decoration: none;
+    color: $color-mobile-menu-link;
+    min-width: $mobile-menu-min-width;
+
+    &:hover {
+        text-decoration: underline;
+        background: $color-mobile-menu-link-bg-hover;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    nav label.menu-toggle {
+        display: none;
+    }
+
+    .collapsable-menu .menu-content {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-content {
+        position: static;
+        margin-left: auto;
+        flex-direction: row;
+        background: none;
+    }
+
+    .menu-content li {
+        margin-left: $spacing-m;
+    }
+
+    .menu-content li a {
+        justify-content: right;
+        padding: $mobile-menu-link-padding;
+        text-decoration: none;
+        color: $color-menu-link;
+        min-width: 0;
+
+        &:hover {
+            text-decoration: underline;
+            background: $color-menu-link-bg-hover;
+        }
+    }
 }

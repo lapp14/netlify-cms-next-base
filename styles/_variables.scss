@@ -1,4 +1,4 @@
-$header-padding: 1rem;
+$header-height: 64px;
 
 /* breakpoints */
 $breakpoint-mobile: 640px;
@@ -20,15 +20,30 @@ $font-lineheight-m: 1.6rem;
 
 /* spacing */
 $content-max-width: 900px;
+
 $spacing-m: 1rem;
+/** TODO: look up real spacing sizes */
+$spacing-s: 0.8rem;
 
 /* colors */
 $color-white: #fff;
 $color-grey-light: #dedede;
 $color-grey-med: #ccc;
+$color-grey-dark: #333;
 $color-black: #000;
 
 /* color assignments */
 $color-header: $color-grey-light;
+$color-mobile-menu-background: $color-grey-dark;
+$color-mobile-menu-link-bg-hover: lighten($color-grey-dark, 10%);
+$color-mobile-menu-link: $color-grey-light;
+
+$color-menu-link: $color-grey-dark;
+$color-menu-link-bg-hover: darken($color-grey-light, 10%);
+
 $color-background: $color-white;
 $color-font: $color-black;
+
+/* spacing assignments */
+$mobile-menu-link-padding: $spacing-m;
+$mobile-menu-min-width: 200px;

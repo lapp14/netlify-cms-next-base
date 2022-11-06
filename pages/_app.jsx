@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import navigation from "../src/navigation";
 
 import "../styles/reset.css";
 import "../styles/global.scss";
@@ -15,19 +16,21 @@ function App({ Component, pageProps }) {
             <Link href="/">Brand</Link>
           </div>
 
-          <ul>
-            <li>
-              <Link href="/posts">Posts</Link>
-            </li>
-
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-
-            <li>
-              <Link href="/contact">Contact</Link>
-            </li>
-          </ul>
+          <div className="collapsable-menu">
+            {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
+            <label htmlFor="menu" className="menu-toggle">
+              &#9776;
+            </label>
+            <input type="checkbox" id="menu" />
+            <ul className="menu-content">
+              {navigation.map((link, k) => (
+                <li key={k}>
+                  <Link href={link.href}>{link.title}</Link>
+                  {/* TODO: Support submenu */}
+                </li>
+              ))}
+            </ul>
+          </div>
         </nav>
       </header>
 
