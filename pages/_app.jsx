@@ -7,6 +7,12 @@ import "../styles/reset.css";
 import "../styles/global.scss";
 import "../styles/header.scss";
 
+function closeMobileMenu() {
+  if (typeof document !== "undefined") {
+    document.getElementById("menu").checked = false;
+  }
+}
+
 function App({ Component, pageProps }) {
   return (
     <>
@@ -25,7 +31,9 @@ function App({ Component, pageProps }) {
             <ul className="menu-content">
               {navigation.map((link, k) => (
                 <li key={k}>
-                  <Link href={link.href}>{link.title}</Link>
+                  <Link href={link.href} onClick={closeMobileMenu()}>
+                    {link.title}
+                  </Link>
                   {/* TODO: Support submenu */}
                 </li>
               ))}
