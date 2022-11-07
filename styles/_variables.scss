@@ -31,6 +31,7 @@ $color-grey-light: #dedede;
 $color-grey-med: #ccc;
 $color-grey-dark: #333;
 $color-black: #000;
+$color-blue: #056ce3;
 
 /* color assignments */
 $color-header: $color-grey-light;
@@ -43,6 +44,7 @@ $color-menu-link-bg-hover: darken($color-grey-light, 10%);
 
 $color-background: $color-white;
 $color-font: $color-black;
+$color-link-default: $color-blue;
 
 /* spacing assignments */
 $mobile-menu-link-padding: $spacing-m;
