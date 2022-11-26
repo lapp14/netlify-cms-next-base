@@ -1,11 +1,35 @@
+/** Import fonts here **/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300&display=swap");
+
+/* constants */
 $header-height: 64px;
 
 /* breakpoints */
-$breakpoint-mobile: 640px;
+$breakpoint-mobile: 600px;
 $breakpoint-tablet: 900px;
-$breakpoint-desktop: 1380px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop-lg: 1536px;
 
-/* headers only */
+/** TODO: look up real spacing sizes */
+$spacing-s: 0.8rem;
+$spacing-m: 1rem;
+$spacing-l: 1.2rem;
+$spacing-xl: 1.5rem;
+
+/* colors */
+$color-white: #fff;
+$color-grey-light: #dedede;
+$color-grey-med: #ccc;
+$color-grey-dark: #333;
+$color-black: #000;
+$color-blue: #056ce3;
+$color-alternate: hsl(101, 92%, 58%);
+
+/* fonts */
+$font-family: "Roboto", sans-serif;
+$font-weight: 300;
+$font-color-alternate: $color-white;
+
 $font-size-xxl: 2.7rem;
 $font-lineheight-xxl: 3.2rem;
 
@@ -18,20 +42,29 @@ $font-lineheight-l: 1.9rem;
 $font-size-m: 1.35rem;
 $font-lineheight-m: 1.6rem;
 
+$font-size-s: 1rem;
+$font-lineheight-s: 1.1rem;
+
+$font-size-xs: 0.9rem;
+$font-lineheight-xs: 1rem;
+
+/** TODO: Add font variables here **/
+
+@media (min-width: $breakpoint-mobile) {
+}
+
+@media (min-width: $breakpoint-tablet) {
+}
+
+@media (min-width: $breakpoint-desktop) {
+}
+
+@media (min-width: $breakpoint-desktop-lg) {
+}
+
 /* spacing */
 $content-max-width: 900px;
-
-$spacing-m: 1rem;
-/** TODO: look up real spacing sizes */
-$spacing-s: 0.8rem;
-
-/* colors */
-$color-white: #fff;
-$color-grey-light: #dedede;
-$color-grey-med: #ccc;
-$color-grey-dark: #333;
-$color-black: #000;
-$color-blue: #056ce3;
+$footer-content-max-width: 1200px;
 
 /* color assignments */
 $color-header: $color-grey-light;
@@ -46,6 +79,10 @@ $color-background: $color-white;
 $color-font: $color-black;
 $color-link-default: $color-blue;
 
+$color-background-footer: $color-black;
+
 /* spacing assignments */
 $mobile-menu-link-padding: $spacing-m;
 $mobile-menu-min-width: 200px;
+
+$footer-padding: $spacing-m;

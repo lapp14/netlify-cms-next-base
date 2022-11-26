@@ -3,6 +3,7 @@
 header {
     margin: 0;
     height: $header-height;
+    min-height: $header-height;
     background: $color-header;
     border-bottom: 1px solid $color-grey-med;
 }

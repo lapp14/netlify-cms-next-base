@@ -1,11 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
+import Image from "next/image";
 import navigation from "../src/navigation";
+import Footer from "../src/components/footer";
 
 import "../styles/reset.css";
 import "../styles/global.scss";
 import "../styles/header.scss";
+import "../styles/footer.scss";
+
+const SOCIAL_ICON_COLOR = "white"; // white or black
 
 function closeMobileMenu() {
   if (typeof document !== "undefined") {
@@ -41,13 +46,14 @@ function App({ Component, pageProps }) {
           </div>
         </nav>
       </header>
-
       <main>
         <div className="container">
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
           <Component {...pageProps} />
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
