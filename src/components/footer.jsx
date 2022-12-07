@@ -41,6 +41,7 @@ function Footer() {
           </a>
 
           <div className="footer-social">
+            {/* Social icons courtesy of https://www.iconfinder.com/icons/7693327 */}
             {Object.entries(profile.social).map(
               ([socialName, socialValues]) => (
                 <div className="footer-social--icon">
