@@ -29,11 +29,11 @@ function Footer() {
             <Link href="/">Brand</Link>
           </span>
           <div className="footer-address">
-            {profile.address.map((line) => (
-              <>
+            {profile.address.map((line, i) => (
+              <React.Fragment key={`footer-address--line-${i}`}>
                 <span>{line}</span>
                 <br />
-              </>
+              </React.Fragment>
             ))}
           </div>
           <a href={`tel:${telephone.phoneNumber}`} className="footer-telephone">
@@ -44,7 +44,10 @@ function Footer() {
             {/* Social icons courtesy of https://www.iconfinder.com/icons/7693327 */}
             {Object.entries(profile.social).map(
               ([socialName, socialValues]) => (
-                <div className="footer-social--icon">
+                <div
+                  className="footer-social--icon"
+                  key={`footer-social--icon-${socialName}`}
+                >
                   <a
                     href={profile.social[socialName].link}
                     target="_blank"
