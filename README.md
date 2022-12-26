@@ -4,9 +4,7 @@ Base headless CMS site using Git, Netlify CMS and NextJS
 
 [Live Demo](https://netlify-cms-next-base.netlify.app/)
 
-## TODO
-- Look up `rem` spacing and make a good layout
-- Implement spacing and line heights for different markup components
+## Todo list...
 
 ## Development
 
@@ -37,7 +35,10 @@ From your site dashboard on Netlify:
 
 ## Links
 
-https://www.netlifycms.org/docs/nextjs/
-https://www.smashingmagazine.com/2021/06/creating-multi-author-blog-nextjs/
+- [Netlify CMS Next docs](https://www.netlifycms.org/docs/nextjs/)
+- [Creating a Multi-author blog with NextJS](https://www.smashingmagazine.com/2021/06/creating-multi-author-blog-nextjs/)
 
-Font sizes in design: https://www.editorx.com/shaping-design/article/font-size
+### Web Typography and design
+- [Everything You Need to Know About Designing for Web Typography](https://medium.com/swlh/everything-you-need-to-know-about-designing-for-web-typography-69cec6ca8230)
+- [Calculatow for `px` and `rem`](https://type-scale.com/)
+- [Font size guidelines for responsive websites](https://www.editorx.com/shaping-design/article/font-size)

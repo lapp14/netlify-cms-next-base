@@ -28,7 +28,7 @@ export default function Home() {
         </p>
 
         <h2>Second Header</h2>
-        <p>I am super lazy and just copied this, full disclosure.</p>
+        <p>I just copied this, full disclosure.</p>
         <p>
           Here is the next paragraph. This will probably be the same as the last
           one. It may be the greatest paragraph ever written. Who knows... It
