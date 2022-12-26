@@ -1,9 +1,13 @@
 @import "_variables.scss";
 
-body {
-    font-size: 18px;
+html {
+    font-size: $font-base-size-sm;
+    line-height: $font-base-lineheight-sm;
     font-family: $font-family;
     font-weight: $font-weight;
+}
+
+body {
     background: #eee;
 }
 
@@ -35,8 +39,18 @@ h4 {
     line-height: $font-lineheight-m;
 }
 
+h5 {
+    font-size: $font-size-s;
+    line-height: $font-lineheight-s;
+}
+
 a {
     color: $color-link-default;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: $spacing-s;
 }
 
 main {
@@ -55,6 +69,11 @@ main {
 }
 
 @media (min-width: $breakpoint-tablet) {
+    html {
+        font-size: $font-base-size-lg;
+        line-height: $font-base-lineheight-lg;
+    }
+
     .container {
         width: $content-max-width;
     }

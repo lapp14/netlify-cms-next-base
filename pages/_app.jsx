@@ -1,16 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
-import Image from "next/image";
 import navigation from "../src/navigation";
 import Footer from "../src/components/footer";
-
+// import Alert from "../src/components/alert";
 import "../styles/reset.css";
 import "../styles/global.scss";
 import "../styles/header.scss";
 import "../styles/footer.scss";
-
-const SOCIAL_ICON_COLOR = "white"; // white or black
 
 function closeMobileMenu() {
   if (typeof document !== "undefined") {
@@ -22,12 +19,13 @@ function App({ Component, pageProps }) {
   return (
     <>
       <header>
+        {/* <Alert /> */}
         <nav>
           <div className="brand">
             <Link href="/">Brand</Link>
           </div>
 
-          <div className="collapsable-menu">
+          <div className="collapsible-menu">
             {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
             <label htmlFor="menu" className="menu-toggle">
               &#9776;

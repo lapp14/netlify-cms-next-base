@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Script from "next/script";
-import { attributes, react as HomeContent } from "../content/home.md";
+import { attributes, react as HomeContent } from "../content/list.md";
 
 export default function Home() {
   const { title, list } = attributes;
@@ -11,23 +11,31 @@ export default function Home() {
         <title>Homepage</title>
         <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       </Head>
-      <article>
-        <h1>{title}</h1>
+      <section>
+        <h1>First Header</h1>
+        <p>
+          Welcome to our website. This website is here to help everyone. It is a
+          great website. Perhaps the best anyone has ever seen. We sure hope
+          this is the case. I am not too sure why I am still typing, to be
+          honest, I feel like this has already gone too far. Oh well...
+        </p>
 
-        {/* content portion of 'content/home.md' */}
-        <HomeContent />
-        <br />
+        <p>
+          Here is the next paragraph. This will probably be the same as the last
+          one. It may be the greatest paragraph ever written. Who knows... It
+          might be great. It might be the greatest paragraph we've ever seen,
+          who knows.
+        </p>
 
-        {/* editable list portion of 'content/home.md' */}
-        <ul>
-          {list.map((item, k) => (
-            <li key={k}>
-              <h2>{item.name}</h2>
-              <p>{item.description}</p>
-            </li>
-          ))}
-        </ul>
-      </article>
+        <h2>Second Header</h2>
+        <p>I am super lazy and just copied this, full disclosure.</p>
+        <p>
+          Here is the next paragraph. This will probably be the same as the last
+          one. It may be the greatest paragraph ever written. Who knows... It
+          might be great. It might be the greatest paragraph we've ever seen,
+          who knows.
+        </p>
+      </section>
     </>
   );
 }

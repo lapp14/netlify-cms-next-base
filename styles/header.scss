@@ -2,7 +2,6 @@
 
 header {
     margin: 0;
-    height: $header-height;
     min-height: $header-height;
     background: $color-header;
     border-bottom: 1px solid $color-grey-med;
@@ -10,7 +9,7 @@ header {
 
 header > nav {
     display: flex;
-    height: 100%;
+    height: $header-height;
     align-items: center;
     margin: 0 $spacing-m;
 }
@@ -18,7 +17,7 @@ header > nav {
 header > nav > .brand {
     text-decoration: none;
     color: $color-font;
-    font-size: $font-lineheight-l;
+    font-size: $font-size-l;
 }
 
 header > nav > .brand > a {
@@ -26,7 +25,7 @@ header > nav > .brand > a {
     color: $color-font;
 }
 
-.collapsable-menu {
+.collapsible-menu {
     margin-left: auto;
 }
 
@@ -37,11 +36,11 @@ header > nav > .brand > a {
     user-select: none;
 }
 
-.collapsable-menu .menu-content {
+.collapsible-menu .menu-content {
     display: none;
 }
 
-.collapsable-menu input:checked ~ .menu-content {
+.collapsible-menu input:checked ~ .menu-content {
     display: flex !important;
     transition: max-height 0.2s ease-in-out;
     max-height: 800px;
@@ -75,12 +74,51 @@ input#menu {
     }
 }
 
+.site-alert {
+    display: flex;
+    background: $color-alert;
+    padding: $spacing-s 0;
+}
+
+.site-alert--content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.site-alert--body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.site-alert--title {
+    font-size: $font-size-m;
+}
+
+.site-alert--text {
+    font-size: $font-size-s;
+}
+
+.site-alert--icon {
+    width: $size-alert-icon;
+    height: $size-alert-icon;
+}
+
+.site-alert--icon button {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 @media (min-width: $breakpoint-tablet) {
     nav label.menu-toggle {
         display: none;
     }
 
-    .collapsable-menu .menu-content {
+    .collapsible-menu .menu-content {
         display: flex;
     }
 
@@ -110,5 +148,9 @@ input#menu {
             text-decoration: underline;
             background: $color-menu-link-bg-hover;
         }
+    }
+
+    .site-alert--content {
+        width: $content-max-width;
     }
 }

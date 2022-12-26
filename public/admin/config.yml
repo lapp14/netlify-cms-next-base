@@ -33,3 +33,12 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
  
+  - name: "site-alert"
+    label: "Site Alert (above navbar)"    
+    folder: "posts"
+    slug: "alert"
+    create: false
+    fields:      
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Icon Type", name: "icon-type", widget: "list" }
