@@ -5,6 +5,8 @@ Base headless CMS site using Git, Netlify CMS and NextJS
 [Live Demo](https://netlify-cms-next-base.netlify.app/)
 
 ## Todo list...
+- telephone number optional
+- mobile footer spacing breaks width
 
 ## Development
 

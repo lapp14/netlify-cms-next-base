@@ -1,10 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import Script from "next/script";
-import { attributes, react as HomeContent } from "../content/list.md";
+// import { attributes, react as HomeContent } from "../content/list.md";
 
 export default function Home() {
-  const { title, list } = attributes;
   return (
     <>
       <Head>
@@ -23,8 +22,8 @@ export default function Home() {
         <p>
           Here is the next paragraph. This will probably be the same as the last
           one. It may be the greatest paragraph ever written. Who knows... It
-          might be great. It might be the greatest paragraph we've ever seen,
-          who knows.
+          might be great. It might be the greatest paragraph we&apos;ve ever
+          seen, who knows.
         </p>
 
         <h2>Second Header</h2>
@@ -32,8 +31,8 @@ export default function Home() {
         <p>
           Here is the next paragraph. This will probably be the same as the last
           one. It may be the greatest paragraph ever written. Who knows... It
-          might be great. It might be the greatest paragraph we've ever seen,
-          who knows.
+          might be great. It might be the greatest paragraph we&apos;ve ever
+          seen, who knows.
         </p>
       </section>
     </>
