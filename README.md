@@ -34,6 +34,8 @@ From your site dashboard on Netlify:
 ## Configuration
 
 - Set your business profile up in `profile.js`
+- Optionally, you can enable [Image Optimization](https://nextjs.org/docs/api-reference/next/image#loader-configuration) using a cloud provider
+  - Optimization has been disabled by defauly in `next.config.js`, as it breaks the Netlify build without further config
 
 ## Links
 

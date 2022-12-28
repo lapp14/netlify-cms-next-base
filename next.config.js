@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
   images: {
+    // Easiest way to get the Netlify build to work is to disable the image optimization
     unoptimized: true,
   },
   sassOptions: {
